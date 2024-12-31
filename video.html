@@ -26,66 +26,107 @@
             </div>
         </section>
 
-        <section class="video-featured">
+        <!-- Video in Evidenza -->
+        <section class="featured-video">
             <div class="container">
                 <h2>Video in Evidenza</h2>
-                <div class="featured-video">
-                    <div class="video-wrapper">
-                        <iframe 
-                            src="https://www.youtube.com/embed/NnqdSfvzaHc?si=DbOi34wPr8uTVf77" 
-                            title="Video in evidenza"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>Titolo del Video in Evidenza</h3>
-                        <p>Descrizione dettagliata del video in evidenza...</p>
-                    </div>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/AGWSGlGlKwI?si=dXrC5NwdaVuGZSPy" 
+                        title="Superpole 2023 - Highlights"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </section>
 
-        <section class="video-categories">
+        <!-- Griglia Video -->
+        <section class="video-grid-section">
             <div class="container">
                 <div class="category-tabs">
-                    <button class="tab-btn active" data-category="gare">Gare</button>
-                    <button class="tab-btn" data-category="interviste">Interviste</button>
+                    <button class="tab-btn active" data-category="all">Tutti</button>
                     <button class="tab-btn" data-category="highlights">Highlights</button>
-                    <button class="tab-btn" data-category="backstage">Backstage</button>
+                    <button class="tab-btn" data-category="gare">Gare</button>
+                    <button class="tab-btn" data-category="interviste">Interviste</button>
                 </div>
 
                 <div class="video-grid">
-                    <article class="video-card">
-                        <div class="video-thumbnail">
-                            <img src="images/video/thumbnail1.jpg" alt="Titolo Video">
-                            <span class="duration">5:23</span>
-                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <!-- Video 1 -->
+                    <div class="video-card" data-category="highlights">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/NnqdSfvzaHc" 
+                                title="SN1 2023 - Round 1"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
-                        <div class="video-content">
-                            <h3>Titolo del Video</h3>
+                        <div class="video-info">
+                            <h3>SN1 2023 - Round 1</h3>
                             <p class="video-meta">
-                                <span><i class="fas fa-calendar"></i> 15 Mar 2024</span>
-                                <span><i class="fas fa-eye"></i> 1.2K views</span>
+                                <span><i class="fas fa-calendar"></i> 15 Mar 2023</span>
+                                <span><i class="fas fa-tag"></i> Highlights</span>
                             </p>
                         </div>
-                    </article>
-                    <!-- Altri video cards -->
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-card" data-category="gare">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/1w-uN26EAeo?si=VqqFdUVp038ilqhI" 
+                                title="SN2 Light - Finale 2023"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>SN2 Light - Finale 2023</h3>
+                            <p class="video-meta">
+                                <span><i class="fas fa-calendar"></i> 20 Apr 2023</span>
+                                <span><i class="fas fa-tag"></i> Gare</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-card" data-category="interviste">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/FkteTauOu5E?si=6i3K-YRNLYnqoeQc" 
+                                title="Intervista Campione SN1 2023"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Intervista Campione SN1 2023</h3>
+                            <p class="video-meta">
+                                <span><i class="fas fa-calendar"></i> 10 Mag 2023</span>
+                                <span><i class="fas fa-tag"></i> Interviste</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <button class="btn btn-primary load-more">Carica altri video</button>
             </div>
         </section>
 
+        <!-- Canale YouTube -->
         <section class="youtube-channel">
             <div class="container">
                 <div class="channel-info">
-                    <img src="images/logo.png" alt="Canale YouTube" class="channel-logo">
+                    <img src="images/logo.png" alt="Canale YouTube SNP" class="channel-logo">
                     <div class="channel-content">
                         <h2>Il Nostro Canale YouTube</h2>
-                        <p>Non perdere nessun aggiornamento! Iscriviti al nostro canale.</p>
-                        <a href="https://youtube.com/channel-id" class="btn btn-youtube" target="_blank">
+                        <p>Non perdere nessun aggiornamento! Iscriviti al nostro canale ufficiale.</p>
+                        <a href="https://www.youtube.com/@SelezioneNazionalePiloti" class="btn btn-youtube" target="_blank">
                             <i class="fab fa-youtube"></i> Iscriviti al Canale
                         </a>
                     </div>
@@ -99,7 +140,6 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/video.js"></script>
 </body>
 </html> 
