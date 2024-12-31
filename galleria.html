@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria - Selezione Nazionale Piloti</title>
+    <!-- CSS Comune -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Componenti -->
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <!-- CSS Specifico della pagina -->
+    <link rel="stylesheet" href="css/galleria.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <header></header>
+
+    <main class="galleria-page">
+        <section class="hero-galleria">
+            <div class="container">
+                <h1>Galleria Fotografica</h1>
+                <p>I momenti più belli delle nostre competizioni</p>
+            </div>
+        </section>
+
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Tutti</button>
+                    <button class="filter-btn" data-filter="sn1">SN1</button>
+                    <button class="filter-btn" data-filter="sn2">SN2</button>
+                    <button class="filter-btn" data-filter="eventi">Eventi</button>
+                    <button class="filter-btn" data-filter="superpole">Superpole</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-grid">
+            <div class="container">
+                <div class="grid">
+                    <!-- SN1 -->
+                    <a href="images/275944748_10161973642129196_6818157725882433714_n.jpg" data-lightbox="gallery" data-title="SN1 - Gara Monza" class="gallery-item" data-category="sn1">
+                        <img src="images/275944748_10161973642129196_6818157725882433714_n.jpg" alt="SN1 - Gara Monza">
+                        <div class="overlay">
+                            <span class="category">SN1</span>
+                            <h3>Gara Monza</h3>
+                        </div>
+                    </a>
+
+                    <a href="images/281046687_10162104501974196_2905433110704756039_n.jpg" data-lightbox="gallery" data-title="SN1 - Podio Imola" class="gallery-item" data-category="sn1">
+                        <img src="images/281046687_10162104501974196_2905433110704756039_n.jpg" alt="SN1 - Podio Imola">
+                        <div class="overlay">
+                            <span class="category">SN1</span>
+                            <h3>Podio Imola</h3>
+                        </div>
+                    </a>
+
+                    <!-- SN2 -->
+                    <a href="images/gallery/sn2-1.jpg" data-lightbox="gallery" data-title="SN2 - Qualifiche Mugello" class="gallery-item" data-category="sn2">
+                        <img src="images/gallery/sn2-1.jpg" alt="SN2 - Qualifiche Mugello">
+                        <div class="overlay">
+                            <span class="category">SN2</span>
+                            <h3>Qualifiche Mugello</h3>
+                        </div>
+                    </a>
+
+                    <!-- Eventi -->
+                    <a href="images/gallery/evento-1.jpg" data-lightbox="gallery" data-title="Premiazione Campionato" class="gallery-item" data-category="eventi">
+                        <img src="images/gallery/evento-1.jpg" alt="Premiazione Campionato">
+                        <div class="overlay">
+                            <span class="category">Eventi</span>
+                            <h3>Premiazione Campionato</h3>
+                        </div>
+                    </a>
+
+                    <!-- Superpole -->
+                    <a href="images/gallery/superpole-1.jpg" data-lightbox="gallery" data-title="Superpole - Finale" class="gallery-item" data-category="superpole">
+                        <img src="images/gallery/superpole-1.jpg" alt="Superpole - Finale">
+                        <div class="overlay">
+                            <span class="category">Superpole</span>
+                            <h3>Finale Stagione</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <footer></footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/galleria.js"></script>
+</body>
+</html> 

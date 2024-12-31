@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campionati - Selezione Nazionale Piloti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/campionati.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/main.min.css' rel='stylesheet' />
+</head>
+<body>
+    <!-- Include Navbar -->
+    <header></header>
+
+    <main class="campionati-page">
+        <section class="hero-campionati">
+            <div class="container">
+                <h1>I Nostri Campionati</h1>
+                <p>Scopri le competizioni che formano i campioni di domani</p>
+            </div>
+        </section>
+
+        <section class="categorie">
+            <div class="container">
+                <div class="categorie-grid">
+                    <article class="categoria-card">
+                        <img src="images/campionati/sn1.jpg" alt="Campionato SN1">
+                        <div class="categoria-content">
+                            <h2>SN1</h2>
+                            <p>Il campionato di punta della Selezione Nazionale Piloti. La massima espressione del talento nel motorsport.</p>
+                            <div class="categoria-actions">
+                                <a href="#" class="btn btn-primary">Regolamento</a>
+                                <a href="#" class="btn">Classifica</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="categoria-card">
+                        <img src="images/campionati/sn1-light.jpg" alt="SN1 Light">
+                        <div class="categoria-content">
+                            <h2>SN1 Light</h2>
+                            <p>Categoria intermedia per piloti in crescita che puntano al campionato principale.</p>
+                            <div class="categoria-actions">
+                                <a href="#" class="btn btn-primary">Regolamento</a>
+                                <a href="#" class="btn">Classifica</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="categoria-card">
+                        <img src="images/campionati/sn2.jpg" alt="SN2">
+                        <div class="categoria-content">
+                            <h2>SN2</h2>
+                            <p>Campionato dedicato ai giovani talenti emergenti del motorsport italiano.</p>
+                            <div class="categoria-actions">
+                                <a href="#" class="btn btn-primary">Regolamento</a>
+                                <a href="#" class="btn">Classifica</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="categoria-card">
+                        <img src="images/campionati/sn2-light.jpg" alt="SN2 Light">
+                        <div class="categoria-content">
+                            <h2>SN2 Light</h2>
+                            <p>Categoria entry-level ideale per iniziare il percorso nel motorsport.</p>
+                            <div class="categoria-actions">
+                                <a href="#" class="btn btn-primary">Regolamento</a>
+                                <a href="#" class="btn">Classifica</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="categoria-card">
+                        <img src="images/campionati/superpole.jpg" alt="Superpole">
+                        <div class="categoria-content">
+                            <h2>Superpole</h2>
+                            <p>Evento speciale che mette alla prova i migliori piloti di tutte le categorie.</p>
+                            <div class="categoria-actions">
+                                <a href="#" class="btn btn-primary">Regolamento</a>
+                                <a href="#" class="btn">Classifica</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="classifiche">
+            <div class="container">
+                <h2>Classifiche in Tempo Reale</h2>
+                <div class="classifiche-tabs">
+                    <button class="tab-btn active" data-category="sn1">SN1</button>
+                    <button class="tab-btn" data-category="sn1-light">SN1 Light</button>
+                    <button class="tab-btn" data-category="sn2">SN2</button>
+                    <button class="tab-btn" data-category="sn2-light">SN2 Light</button>
+                    <button class="tab-btn" data-category="superpole">Superpole</button>
+                </div>
+                <div class="classifica-content" id="sn1-classifica"></div>
+                <div class="classifica-content" id="sn1-light-classifica"></div>
+                <div class="classifica-content" id="sn2-classifica"></div>
+                <div class="classifica-content" id="sn2-light-classifica"></div>
+                <div class="classifica-content" id="superpole-classifica"></div>
+            </div>
+        </section>
+
+        <section class="iscrizione">
+            <div class="container">
+                <h2>Iscrizione ai Campionati</h2>
+                <form class="iscrizione-form" id="iscrizione-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleziona una categoria</option>
+                            <option value="kart">Kart</option>
+                            <option value="formula">Formula</option>
+                            <option value="turismo">Turismo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="esperienza">Esperienza Precedente</label>
+                        <textarea id="esperienza" name="esperienza" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Invia Iscrizione</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <footer></footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/main.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.10/main.min.js'></script>
+    <script src="js/campionati.js"></script>
+</body>
+</html> 

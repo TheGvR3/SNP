@@ -1,0 +1,195 @@
+/* Campionati Page Styles */
+.campionati-page {
+    padding-top: 80px;
+}
+
+/* Hero Section */
+.hero-campionati {
+    background: linear-gradient(rgba(51, 49, 54, 0.8), rgba(51, 49, 54, 0.8)), 
+                url('../images/campionati/hero-bg.jpg') center/cover;
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-campionati h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Categorie Grid */
+.categorie {
+    padding: 60px 0;
+    background: var(--light-gray);
+}
+
+.categorie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.categoria-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.categoria-content {
+    padding: 20px;
+}
+
+.categoria-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Classifiche */
+.classifiche {
+    padding: 60px 0;
+}
+
+.classifiche-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: var(--light-gray);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Form Iscrizione */
+.iscrizione {
+    padding: 60px 0;
+    background: var(--light-gray);
+}
+
+.iscrizione-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-campionati h1 {
+        font-size: 2rem;
+    }
+
+    .classifiche-tabs {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        width: 100%;
+    }
+} 
+
+/* Tabella Classifiche */
+.classifica-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.classifica-table th,
+.classifica-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.classifica-table th {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.classifica-table tr:hover {
+    background: var(--light-gray);
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background: rgba(233, 188, 0, 0.1);
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.alert-error {
+    background: rgba(51, 49, 54, 0.1);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.classifica-content {
+    display: none;
+}
+
+.classifica-content.active {
+    display: block;
+}
+
+.error-message {
+    padding: 20px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+    margin: 20px 0;
+    color: #856404;
+} 

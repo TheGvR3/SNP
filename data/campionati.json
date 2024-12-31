@@ -1,0 +1,27 @@
+{
+    "sn1": [
+        { "pos": 1, "pilota": "Mario Rossi", "punti": 150 },
+        { "pos": 2, "pilota": "Luigi Verdi", "punti": 130 },
+        { "pos": 3, "pilota": "Anna Bianchi", "punti": 120 }
+    ],
+    "sn1-light": [
+        { "pos": 1, "pilota": "Marco Neri", "punti": 200 },
+        { "pos": 2, "pilota": "Sara Gialli", "punti": 180 },
+        { "pos": 3, "pilota": "Paolo Blu", "punti": 160 }
+    ],
+    "sn2": [
+        { "pos": 1, "pilota": "Luca Viola", "punti": 250 },
+        { "pos": 2, "pilota": "Elena Rosa", "punti": 230 },
+        { "pos": 3, "pilota": "Andrea Arancio", "punti": 210 }
+    ],
+    "sn2-light": [
+        { "pos": 1, "pilota": "Giuseppe Bianchi", "punti": 180 },
+        { "pos": 2, "pilota": "Francesca Rossi", "punti": 165 },
+        { "pos": 3, "pilota": "Marco Verdi", "punti": 150 }
+    ],
+    "superpole": [
+        { "pos": 1, "pilota": "Alessandro Ferrari", "punti": 100 },
+        { "pos": 2, "pilota": "Sofia Martini", "punti": 90 },
+        { "pos": 3, "pilota": "Lorenzo Bruni", "punti": 80 }
+    ]
+} 
