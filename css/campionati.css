@@ -59,6 +59,9 @@
     border-radius: 20px;
     padding: 40px 30px 30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .campionati-group.sprint {
@@ -94,7 +97,7 @@
 
 .group-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
@@ -198,10 +201,18 @@
     .special-events {
         grid-template-columns: 1fr;
     }
+
+    .group-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
     .campionati-container {
+        grid-template-columns: 1fr;
+    }
+
+    .group-cards {
         grid-template-columns: 1fr;
     }
 }
@@ -223,6 +234,10 @@
 
     .categoria-card {
         margin-bottom: 20px;
+    }
+
+    .group-cards {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -497,4 +512,10 @@
     border-radius: 4px;
     margin: 20px 0;
     color: #856404;
+}
+
+/* Aggiorna lo stile per il pulsante */
+.campionati-group .btn {
+    margin-top: 30px;
+    align-self: center;
 } 
