@@ -1,6 +1,8 @@
 /* Chi Siamo Page Styles */
 .chi-siamo-page {
     padding-top: 80px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Hero Section */
@@ -17,30 +19,7 @@
 }
 
 .hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
-}
-
-.hero-stats .stat-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
-    min-width: 150px;
-}
-
-.hero-stats .number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    display: block;
-}
-
-.hero-stats .label {
-    font-size: 1rem;
-    opacity: 0.9;
+    display: none;
 }
 
 .scroll-indicator {
@@ -545,6 +524,16 @@
 
     .about-content {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
     }
 
     .about-features {
@@ -553,26 +542,47 @@
 
     .sponsor-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0;
+        width: 100%;
     }
 
-    .timeline::before {
-        left: 30px;
+    .sponsor-logo img {
+        width: 100%;
+        height: auto;
     }
 
-    .timeline-content {
-        width: calc(100% - 60px);
-        margin-left: 60px !important;
+    .timeline {
+        width: 100%;
+        padding: 0 15px;
     }
 
-    .timeline-item:nth-child(odd) .timeline-content::before,
-    .timeline-item:nth-child(even) .timeline-content::before {
-        left: -40px;
+    .staff-grid {
+        padding: 0;
+        width: 100%;
     }
 
-    .timeline-item:nth-child(odd) .timeline-content,
-    .timeline-item:nth-child(even) .timeline-content {
-        margin: 0;
-        margin-left: 60px;
+    .piloti-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cta {
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
     }
 
     .categoria-filters {
