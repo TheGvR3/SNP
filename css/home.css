@@ -3,6 +3,8 @@
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                 url('../images/464939088_10234948141833388_555340795505353003_n.jpg') center/cover;
+                
+    background-attachment: fixed;
     position: relative;
     display: flex;
     align-items: center;

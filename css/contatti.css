@@ -71,7 +71,9 @@
 /* Contact Form */
 .contact-form {
     padding: 80px 0;
-    background: var(--light-gray);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                url('../images/logo.png') center/cover;
+    color: var(--white);
 }
 
 .form-wrapper {
@@ -234,35 +236,66 @@
 
 /* FAQ Section */
 .faq {
-    padding: 60px 0;
-    background: var(--white);
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.faq h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+    font-size: 2.5rem;
 }
 
 .accordion {
-    max-width: 800px;
-    margin: 30px auto 0;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .accordion-item {
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    margin-bottom: 10px;
+    background: var(--white);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 .accordion-header {
     width: 100%;
-    padding: 20px;
-    background: none;
+    padding: 25px 30px;
+    background: var(--white);
     border: none;
     text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: rgba(233, 188, 0, 0.05);
+    color: var(--primary-color);
 }
 
 .accordion-header i {
-    transition: transform 0.3s;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+}
+
+.accordion-header.active {
+    background: rgba(233, 188, 0, 0.1);
+    color: var(--primary-color);
 }
 
 .accordion-header.active i {
@@ -270,15 +303,45 @@
 }
 
 .accordion-content {
-    padding: 0 20px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+    background: var(--white);
 }
 
 .accordion-content.active {
-    padding: 20px;
     max-height: 1000px;
+    padding: 0 30px 25px;
+}
+
+.accordion-content p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.accordion-content ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.accordion-content ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.accordion-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-color);
 }
 
 /* Responsive Design */
@@ -312,5 +375,32 @@
 
     .map-container {
         padding-bottom: 75%; /* Aspect ratio 4:3 per mobile */
+    }
+
+    .faq {
+        padding: 60px 0;
+    }
+
+    .faq h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .accordion {
+        margin: 0 20px;
+    }
+
+    .accordion-header {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .accordion-content.active {
+        padding: 0 20px 20px;
+    }
+
+    .accordion-content ul li {
+        padding-left: 20px;
+        margin-bottom: 10px;
     }
 } 
