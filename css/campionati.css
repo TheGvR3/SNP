@@ -5,8 +5,8 @@
 
 /* Hero Section */
 .hero-campionati {
-    background: linear-gradient(rgba(51, 49, 54, 0.8), rgba(51, 49, 54, 0.8)), 
-                url('../images/campionati/hero-bg.jpg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../images/464939088_10234948141833388_555340795505353003_n.jpg') center/cover;
     color: var(--white);
     padding: 100px 0;
     text-align: center;
@@ -17,29 +17,157 @@
     margin-bottom: 1rem;
 }
 
-/* Categorie Grid */
+/* Categorie Section */
 .categorie {
-    padding: 60px 0;
+    padding: 80px 0;
     background: var(--light-gray);
 }
 
-.categorie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+.categorie h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
 }
 
+/* Grid delle categorie principali */
+.categorie-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Special Events (Talent e Superpole) */
+.special-events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Campionati Grid */
+.campionati-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Campionati Groups */
+.campionati-group {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 40px 30px 30px;
+    position: relative;
+}
+
+.campionati-group.sprint {
+    border: 2px solid var(--primary-color);
+}
+
+.campionati-group.endurance {
+    border: 2px solid var(--secondary-color);
+}
+
+.group-header {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.sprint .group-header {
+    background: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(233, 188, 0, 0.2);
+}
+
+.endurance .group-header {
+    background: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(51, 49, 54, 0.2);
+}
+
+.group-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .campionati-group {
+        padding: 30px 20px 20px;
+    }
+
+    .group-header {
+        font-size: 1.3rem;
+        padding: 8px 20px;
+        top: -16px;
+    }
+
+    .group-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Colonne Sprint ed Endurance */
+.categoria-column {
+    padding: 30px;
+    border: 2px solid var(--light-gray);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.categoria-column.sprint {
+    border-color: var(--primary-color);
+}
+
+.categoria-column.endurance {
+    border-color: var(--secondary-color);
+}
+
+/* Header delle colonne */
+.categoria-column-header {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: -50px auto 30px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+}
+
+.sprint .categoria-column-header {
+    background: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(233, 188, 0, 0.2);
+}
+
+.endurance .categoria-column-header {
+    background: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(51, 49, 54, 0.2);
+}
+
+/* Cards delle categorie */
 .categoria-card {
     background: var(--white);
-    border-radius: 8px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
 }
 
 .categoria-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 .categoria-card img {
@@ -49,39 +177,248 @@
 }
 
 .categoria-content {
-    padding: 20px;
+    padding: 25px;
 }
 
-.categoria-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+.categoria-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+.categoria-content p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .special-events {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .campionati-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .categorie h2 {
+        font-size: 2rem;
+    }
+
+    .categoria-column {
+        padding: 20px;
+    }
+
+    .categoria-column-header {
+        font-size: 1.3rem;
+        padding: 8px 20px;
+        margin-top: -35px;
+    }
+
+    .categoria-card {
+        margin-bottom: 20px;
+    }
 }
 
 /* Classifiche */
 .classifiche {
-    padding: 60px 0;
+    padding: 80px 0;
+    background: var(--light-gray);
 }
 
+.classifiche h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+}
+
+/* Tabs Styling */
 .classifiche-tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 .tab-btn {
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    background: var(--light-gray);
+    background: var(--white);
     cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.3s;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: var(--secondary-color);
+    border: 2px solid transparent;
+}
+
+.tab-btn:hover {
+    background: var(--light-gray);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .tab-btn.active {
     background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(233, 188, 0, 0.3);
+}
+
+/* Classifiche Content */
+.classifiche-overlay {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    margin: 0 auto;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+.classifica-content {
+    display: none;
+}
+
+.classifica-content.active {
+    display: block;
+}
+
+/* Table Styling */
+.classifica-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+}
+
+.classifica-table th,
+.classifica-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.classifica-table th {
+    background: var(--secondary-color);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.classifica-table th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.classifica-table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.classifica-table tr:hover {
+    background: var(--light-gray);
+}
+
+.classifica-table td:first-child {
+    font-weight: 600;
     color: var(--secondary-color);
-    font-weight: bold;
+}
+
+/* Archivio Button */
+.classifiche-archivio {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.btn-secondary:hover {
+    background: #444;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-secondary i {
+    font-size: 1.1em;
+}
+
+/* Error Message */
+.error-message {
+    padding: 20px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #856404;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .classifiche h2 {
+        font-size: 2rem;
+    }
+
+    .classifiche-overlay {
+        padding: 20px;
+        margin: 0 15px 30px 15px;
+    }
+
+    .tab-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .classifica-table th,
+    .classifica-table td {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .classifiche h2 {
+        font-size: 1.8rem;
+    }
+
+    .classifiche-tabs {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tab-btn {
+        width: 100%;
+    }
+
+    .btn-secondary {
+        width: 90%;
+        justify-content: center;
+    }
 }
 
 /* Form Iscrizione */
@@ -90,72 +427,48 @@
     background: var(--light-gray);
 }
 
-.iscrizione-form {
-    max-width: 600px;
+.iscrizione-content {
+    max-width: 800px;
     margin: 0 auto;
     background: var(--white);
-    padding: 30px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: var(--shadow);
 }
 
-.form-group {
+.iscrizione-info {
+    margin-bottom: 30px;
+}
+
+.iscrizione-info p {
     margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
+.iscrizione-info ol {
+    margin: 20px 0;
+    padding-left: 20px;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.iscrizione-info li {
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
-/* Responsive Design */
+.iscrizione-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.iscrizione-cta .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
 @media (max-width: 768px) {
-    .hero-campionati h1 {
-        font-size: 2rem;
+    .iscrizione-content {
+        padding: 20px;
     }
-
-    .classifiche-tabs {
-        flex-direction: column;
-    }
-
-    .tab-btn {
-        width: 100%;
-    }
-} 
-
-/* Tabella Classifiche */
-.classifica-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background: var(--white);
-    box-shadow: var(--shadow);
-}
-
-.classifica-table th,
-.classifica-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.classifica-table th {
-    background: var(--secondary-color);
-    color: var(--white);
-}
-
-.classifica-table tr:hover {
-    background: var(--light-gray);
 }
 
 /* Alert Messages */
@@ -175,14 +488,6 @@
     background: rgba(51, 49, 54, 0.1);
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
-}
-
-.classifica-content {
-    display: none;
-}
-
-.classifica-content.active {
-    display: block;
 }
 
 .error-message {

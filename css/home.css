@@ -60,19 +60,110 @@
     background: var(--white);
 }
 
-.path-steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 50px;
+.path-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
 }
 
+/* Talent Step */
+.path-start {
+    max-width: 400px;
+    margin: 0 auto 80px;
+    position: relative;
+}
+
+.path-start .step {
+    border: 2px solid var(--primary-color);
+}
+
+/* Freccia che collega Talent alle colonne */
+.path-start::after {
+    content: '\f063';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--primary-color);
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Parallel Paths */
+.path-parallel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.path-parallel::before {
+    display: none;
+}
+
+.path-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border: 2px solid var(--light-gray);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+/* Stili specifici per ogni colonna */
+.path-column.sprint {
+    border-color: var(--primary-color);
+}
+
+.path-column.endurance {
+    border-color: var(--secondary-color);
+}
+
+.path-column h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: -50px auto 20px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Colori specifici per gli header delle colonne */
+.path-column.sprint h4 {
+    background: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(233, 188, 0, 0.2);
+}
+
+.path-column.endurance h4 {
+    background: var(--secondary-color);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(51, 49, 54, 0.2);
+}
+
+/* Step Cards */
 .step {
     text-align: center;
     padding: 30px;
     background: var(--light-gray);
-    border-radius: 8px;
+    border-radius: 15px;
     position: relative;
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .step-number {
@@ -86,6 +177,33 @@
     justify-content: center;
     font-weight: bold;
     margin: 0 auto 20px;
+    font-size: 1.2rem;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.step p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.step-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.step-features span {
+    background: var(--white);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
 }
 
 /* Next Event */
@@ -349,35 +467,29 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .path-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 992px) {
     .path-steps {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .event-highlight {
-        grid-template-columns: 1fr;
-    }
-
-    .news-card.featured {
-        grid-template-columns: 1fr;
-    }
-
-    .news-secondary-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-stats {
+@media (max-width: 576px) {
+    .path-steps {
         grid-template-columns: 1fr;
     }
 
-    .news-grid {
-        grid-template-columns: 1fr;
+    .path-section h2 {
+        font-size: 2rem;
+    }
+
+    .step {
+        padding: 20px;
     }
 }
 
@@ -389,16 +501,73 @@
 
 .eventi-section h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: var(--secondary-color);
 }
 
+/* Evento in Evidenza */
+.evento-highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.evento-highlight .evento-info {
+    padding: 20px;
+}
+
+.evento-highlight .evento-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.evento-highlight h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.evento-highlight .evento-details {
+    margin: 30px 0;
+}
+
+.evento-highlight .evento-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.evento-highlight .evento-details i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    width: 20px;
+}
+
+.evento-highlight .evento-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+/* Lista Eventi */
 .eventi-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .evento-card {
@@ -503,5 +672,159 @@
         justify-content: center;
         gap: 10px;
         padding: 15px;
+    }
+}
+
+/* Prossimi Eventi */
+.prossimi-eventi {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.eventi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.evento-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.evento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.evento-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    padding: 10px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.evento-data .giorno {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.evento-data .mese {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.evento-info {
+    flex: 1;
+}
+
+.evento-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.evento-info p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.evento-tipo {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--light-gray);
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-right: 8px;
+}
+
+.evento-nota {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #fff3cd;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #856404;
+}
+
+@media (max-width: 768px) {
+    .eventi-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .evento-card {
+        padding: 15px;
+    }
+
+    .evento-data {
+        min-width: 70px;
+    }
+
+    .evento-data .giorno {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .evento-highlight {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .evento-highlight h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .eventi-section h2 {
+        font-size: 2rem;
+    }
+
+    .eventi-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .path-parallel {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .path-column {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .path-column h4 {
+        font-size: 1.5rem;
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .path-section h2 {
+        font-size: 2rem;
+    }
+
+    .step {
+        padding: 20px;
     }
 } 

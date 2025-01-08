@@ -5,8 +5,8 @@
 
 /* Hero Section */
 .hero-contatti {
-    background: linear-gradient(rgba(51, 49, 54, 0.8), rgba(51, 49, 54, 0.8)), 
-                url('../images/contatti/hero-bg.jpg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../images/464939088_10234948141833388_555340795505353003_n.jpg') center/cover;
     color: var(--white);
     padding: 100px 0;
     text-align: center;

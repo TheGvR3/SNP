@@ -23,5 +23,25 @@
         { "pos": 1, "pilota": "Alessandro Ferrari", "punti": 100 },
         { "pos": 2, "pilota": "Sofia Martini", "punti": 90 },
         { "pos": 3, "pilota": "Lorenzo Bruni", "punti": 80 }
+    ],
+    "endurance-sn1": [
+        { "pos": 1, "pilota": "Team Alpha", "punti": 180 },
+        { "pos": 2, "pilota": "Team Beta", "punti": 165 },
+        { "pos": 3, "pilota": "Team Gamma", "punti": 150 }
+    ],
+    "endurance-sn1-light": [
+        { "pos": 1, "pilota": "Team Delta", "punti": 200 },
+        { "pos": 2, "pilota": "Team Epsilon", "punti": 185 },
+        { "pos": 3, "pilota": "Team Zeta", "punti": 170 }
+    ],
+    "endurance-sn2": [
+        { "pos": 1, "pilota": "Team Eta", "punti": 220 },
+        { "pos": 2, "pilota": "Team Theta", "punti": 200 },
+        { "pos": 3, "pilota": "Team Iota", "punti": 180 }
+    ],
+    "talent": [
+        { "pos": 1, "pilota": "Marco Bianchi", "punti": 150 },
+        { "pos": 2, "pilota": "Laura Verdi", "punti": 140 },
+        { "pos": 3, "pilota": "Giovanni Rossi", "punti": 130 }
     ]
 } 

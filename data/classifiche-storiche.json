@@ -1,0 +1,190 @@
+{
+    "2023": {
+        "sn1": [
+            { "pos": 1, "pilota": "Alessandro Rossi", "punti": 245 },
+            { "pos": 2, "pilota": "Marco Bianchi", "punti": 230 },
+            { "pos": 3, "pilota": "Giuseppe Verdi", "punti": 215 }
+        ],
+        "sn1-light": [
+            { "pos": 1, "pilota": "Luca Ferrari", "punti": 210 },
+            { "pos": 2, "pilota": "Andrea Romano", "punti": 195 },
+            { "pos": 3, "pilota": "Sofia Marino", "punti": 180 }
+        ],
+        "sn2": [
+            { "pos": 1, "pilota": "Francesco Costa", "punti": 225 },
+            { "pos": 2, "pilota": "Lorenzo Bruno", "punti": 210 },
+            { "pos": 3, "pilota": "Elena Ricci", "punti": 195 }
+        ],
+        "sn2-light": [
+            { "pos": 1, "pilota": "Matteo Conti", "punti": 190 },
+            { "pos": 2, "pilota": "Sara Galli", "punti": 175 },
+            { "pos": 3, "pilota": "Paolo Mancini", "punti": 160 }
+        ],
+        "superpole": [
+            { "pos": 1, "pilota": "Alessandro Rossi", "punti": 100 },
+            { "pos": 2, "pilota": "Luca Ferrari", "punti": 90 },
+            { "pos": 3, "pilota": "Francesco Costa", "punti": 80 }
+        ],
+        "endurance-sn1": [
+            { "pos": 1, "pilota": "Team Rossi Racing", "punti": 220 },
+            { "pos": 2, "pilota": "Team Veloce", "punti": 205 },
+            { "pos": 3, "pilota": "Team Campioni", "punti": 190 }
+        ],
+        "endurance-sn1-light": [
+            { "pos": 1, "pilota": "Team Giovani", "punti": 200 },
+            { "pos": 2, "pilota": "Team Sfida", "punti": 185 },
+            { "pos": 3, "pilota": "Team Futuro", "punti": 170 }
+        ],
+        "endurance-sn2": [
+            { "pos": 1, "pilota": "Team Esordienti", "punti": 180 },
+            { "pos": 2, "pilota": "Team Promesse", "punti": 165 },
+            { "pos": 3, "pilota": "Team Talenti", "punti": 150 }
+        ],
+        "talent": [
+            { "pos": 1, "pilota": "Michele Rizzo", "punti": 150 },
+            { "pos": 2, "pilota": "Giulia Moretti", "punti": 140 },
+            { "pos": 3, "pilota": "Davide Leone", "punti": 130 }
+        ]
+    },
+    "2022": {
+        "sn1": [
+            { "pos": 1, "pilota": "Marco Bianchi", "punti": 235 },
+            { "pos": 2, "pilota": "Alessandro Rossi", "punti": 220 },
+            { "pos": 3, "pilota": "Lorenzo Bruno", "punti": 205 }
+        ],
+        "sn1-light": [
+            { "pos": 1, "pilota": "Andrea Romano", "punti": 200 },
+            { "pos": 2, "pilota": "Sofia Marino", "punti": 185 },
+            { "pos": 3, "pilota": "Luca Ferrari", "punti": 170 }
+        ],
+        "sn2": [
+            { "pos": 1, "pilota": "Elena Ricci", "punti": 215 },
+            { "pos": 2, "pilota": "Francesco Costa", "punti": 200 },
+            { "pos": 3, "pilota": "Giuseppe Verdi", "punti": 185 }
+        ],
+        "sn2-light": [
+            { "pos": 1, "pilota": "Sara Galli", "punti": 180 },
+            { "pos": 2, "pilota": "Matteo Conti", "punti": 165 },
+            { "pos": 3, "pilota": "Paolo Mancini", "punti": 150 }
+        ],
+        "superpole": [
+            { "pos": 1, "pilota": "Marco Bianchi", "punti": 100 },
+            { "pos": 2, "pilota": "Elena Ricci", "punti": 90 },
+            { "pos": 3, "pilota": "Andrea Romano", "punti": 80 }
+        ],
+        "endurance-sn1": [
+            { "pos": 1, "pilota": "Team Veloce", "punti": 210 },
+            { "pos": 2, "pilota": "Team Rossi Racing", "punti": 195 },
+            { "pos": 3, "pilota": "Team Campioni", "punti": 180 }
+        ],
+        "endurance-sn1-light": [
+            { "pos": 1, "pilota": "Team Sfida", "punti": 190 },
+            { "pos": 2, "pilota": "Team Giovani", "punti": 175 },
+            { "pos": 3, "pilota": "Team Futuro", "punti": 160 }
+        ],
+        "endurance-sn2": [
+            { "pos": 1, "pilota": "Team Promesse", "punti": 170 },
+            { "pos": 2, "pilota": "Team Esordienti", "punti": 155 },
+            { "pos": 3, "pilota": "Team Talenti", "punti": 140 }
+        ],
+        "talent": [
+            { "pos": 1, "pilota": "Giulia Moretti", "punti": 145 },
+            { "pos": 2, "pilota": "Davide Leone", "punti": 135 },
+            { "pos": 3, "pilota": "Michele Rizzo", "punti": 125 }
+        ]
+    },
+    "2021": {
+        "sn1": [
+            { "pos": 1, "pilota": "Lorenzo Bruno", "punti": 240 },
+            { "pos": 2, "pilota": "Marco Bianchi", "punti": 225 },
+            { "pos": 3, "pilota": "Alessandro Rossi", "punti": 210 }
+        ],
+        "sn1-light": [
+            { "pos": 1, "pilota": "Sofia Marino", "punti": 205 },
+            { "pos": 2, "pilota": "Luca Ferrari", "punti": 190 },
+            { "pos": 3, "pilota": "Andrea Romano", "punti": 175 }
+        ],
+        "sn2": [
+            { "pos": 1, "pilota": "Giuseppe Verdi", "punti": 220 },
+            { "pos": 2, "pilota": "Elena Ricci", "punti": 205 },
+            { "pos": 3, "pilota": "Francesco Costa", "punti": 190 }
+        ],
+        "sn2-light": [
+            { "pos": 1, "pilota": "Paolo Mancini", "punti": 185 },
+            { "pos": 2, "pilota": "Sara Galli", "punti": 170 },
+            { "pos": 3, "pilota": "Matteo Conti", "punti": 155 }
+        ],
+        "superpole": [
+            { "pos": 1, "pilota": "Lorenzo Bruno", "punti": 100 },
+            { "pos": 2, "pilota": "Sofia Marino", "punti": 90 },
+            { "pos": 3, "pilota": "Giuseppe Verdi", "punti": 80 }
+        ],
+        "endurance-sn1": [
+            { "pos": 1, "pilota": "Team Campioni", "punti": 215 },
+            { "pos": 2, "pilota": "Team Veloce", "punti": 200 },
+            { "pos": 3, "pilota": "Team Rossi Racing", "punti": 185 }
+        ],
+        "endurance-sn1-light": [
+            { "pos": 1, "pilota": "Team Futuro", "punti": 195 },
+            { "pos": 2, "pilota": "Team Sfida", "punti": 180 },
+            { "pos": 3, "pilota": "Team Giovani", "punti": 165 }
+        ],
+        "endurance-sn2": [
+            { "pos": 1, "pilota": "Team Talenti", "punti": 175 },
+            { "pos": 2, "pilota": "Team Promesse", "punti": 160 },
+            { "pos": 3, "pilota": "Team Esordienti", "punti": 145 }
+        ],
+        "talent": [
+            { "pos": 1, "pilota": "Davide Leone", "punti": 140 },
+            { "pos": 2, "pilota": "Michele Rizzo", "punti": 130 },
+            { "pos": 3, "pilota": "Giulia Moretti", "punti": 120 }
+        ]
+    },
+    "2020": {
+        "sn1": [
+            { "pos": 1, "pilota": "Marco Bianchi", "punti": 230 },
+            { "pos": 2, "pilota": "Lorenzo Bruno", "punti": 215 },
+            { "pos": 3, "pilota": "Alessandro Rossi", "punti": 200 }
+        ],
+        "sn1-light": [
+            { "pos": 1, "pilota": "Luca Ferrari", "punti": 195 },
+            { "pos": 2, "pilota": "Sofia Marino", "punti": 180 },
+            { "pos": 3, "pilota": "Andrea Romano", "punti": 165 }
+        ],
+        "sn2": [
+            { "pos": 1, "pilota": "Elena Ricci", "punti": 210 },
+            { "pos": 2, "pilota": "Giuseppe Verdi", "punti": 195 },
+            { "pos": 3, "pilota": "Francesco Costa", "punti": 180 }
+        ],
+        "sn2-light": [
+            { "pos": 1, "pilota": "Sara Galli", "punti": 175 },
+            { "pos": 2, "pilota": "Paolo Mancini", "punti": 160 },
+            { "pos": 3, "pilota": "Matteo Conti", "punti": 145 }
+        ],
+        "superpole": [
+            { "pos": 1, "pilota": "Marco Bianchi", "punti": 100 },
+            { "pos": 2, "pilota": "Luca Ferrari", "punti": 90 },
+            { "pos": 3, "pilota": "Elena Ricci", "punti": 80 }
+        ],
+        "endurance-sn1": [
+            { "pos": 1, "pilota": "Team Veloce", "punti": 205 },
+            { "pos": 2, "pilota": "Team Campioni", "punti": 190 },
+            { "pos": 3, "pilota": "Team Rossi Racing", "punti": 175 }
+        ],
+        "endurance-sn1-light": [
+            { "pos": 1, "pilota": "Team Sfida", "punti": 185 },
+            { "pos": 2, "pilota": "Team Futuro", "punti": 170 },
+            { "pos": 3, "pilota": "Team Giovani", "punti": 155 }
+        ],
+        "endurance-sn2": [
+            { "pos": 1, "pilota": "Team Promesse", "punti": 165 },
+            { "pos": 2, "pilota": "Team Talenti", "punti": 150 },
+            { "pos": 3, "pilota": "Team Esordienti", "punti": 135 }
+        ],
+        "talent": [
+            { "pos": 1, "pilota": "Michele Rizzo", "punti": 135 },
+            { "pos": 2, "pilota": "Giulia Moretti", "punti": 125 },
+            { "pos": 3, "pilota": "Davide Leone", "punti": 115 }
+        ]
+    }
+} 

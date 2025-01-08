@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivio Classifiche - Selezione Nazionale Piloti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/classifiche-storiche.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <header></header>
+
+    <main class="classifiche-storiche-page">
+        <section class="hero-classifiche">
+            <div class="container">
+                <h1>Archivio Classifiche</h1>
+                <p>Consulta le classifiche delle passate edizioni dei nostri campionati</p>
+            </div>
+        </section>
+
+        <section class="archivio">
+            <div class="container">
+                <div class="year-selector">
+                    <select id="anno" class="anno-select">
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+
+                <div class="classifiche-tabs">
+                    <!-- stessi tab di campionati.html -->
+                </div>
+
+                <div class="classifiche-content">
+                    <!-- il contenuto verrà caricato dinamicamente -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <footer></footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/classifiche-storiche.js"></script>
+</body>
+</html> 
