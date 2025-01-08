@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="css/categoria.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/galleria.css">
 </head>
 <body>
     <header></header>
@@ -35,33 +37,59 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="categories-details">
             <div class="container">
-                <h2>Format dell'Evento</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <img src="images/sn1/471593560_10165113463504196_6423627806745907011_n.jpg" alt="Qualifiche">
-                        <i class="fas fa-flag-checkered"></i>
-                        <h3>Qualifiche</h3>
-                        <p>Sessioni di qualifica per determinare la griglia di partenza</p>
+                <div class="category-detail">
+                    <div class="category-header">
+                        <h2>Format dell'Evento</h2>
                     </div>
-                    <div class="feature-card">
-                        <img src="images/sn2/465996528_18057682792847685_7462064702931881816_n.jpg" alt="Gara Sprint">
-                        <i class="fas fa-stopwatch"></i>
-                        <h3>Gara Sprint</h3>
-                        <p>Gare brevi e intense per selezionare i finalisti</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="images/sn1/48368706_10158092164224196_6115367301551226880_n.jpg" alt="Super Finale">
-                        <i class="fas fa-trophy"></i>
-                        <h3>Super Finale</h3>
-                        <p>I migliori si sfidano per il titolo di campione assoluto</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" alt="Premiazione">
-                        <i class="fas fa-award"></i>
-                        <h3>Premiazione</h3>
-                        <p>Riconoscimenti speciali e premi per i migliori piloti</p>
+                    <div class="category-content">
+                        <div class="category-text">
+                            <p>Un evento unico che riunisce i migliori piloti di ogni categoria in una sfida all'ultimo centesimo:</p>
+                            <ul>
+                                <li>Qualifiche con format eliminatorio (Q1, Q2, Q3)</li>
+                                <li>Gare sprint di selezione con griglia invertita</li>
+                                <li>Super finale con i migliori 10 piloti</li>
+                                <li>Kart identici preparati dallo staff tecnico</li>
+                            </ul>
+                            
+                            <div class="event-structure">
+                                <h4>Struttura Evento</h4>
+                                <div class="event-details">
+                                    <div class="event-timing">
+                                        <h5>Programma</h5>
+                                        <ul>
+                                            <li>Prove Libere (20 min)</li>
+                                            <li>Qualifiche Progressive</li>
+                                            <li>3 Sprint Race (10 giri)</li>
+                                            <li>Super Finale (20 giri)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-points">
+                                        <h5>Qualificati</h5>
+                                        <ul>
+                                            <li>Top 5 SN1</li>
+                                            <li>Top 3 SN1 Light</li>
+                                            <li>Top 3 SN2</li>
+                                            <li>Top 3 Endurance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="category-requirements">
+                                <h4>Premi e Riconoscimenti</h4>
+                                <ul>
+                                    <li>Trofeo Superpole e premio in denaro</li>
+                                    <li>Wild card per eventi internazionali</li>
+                                    <li>Kit racing completo</li>
+                                    <li>Media coverage dedicato</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="images/sn1/471593560_10165113463504196_6423627806745907011_n.jpg" alt="Superpole Racing">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,38 +98,27 @@
         <section class="gallery">
             <div class="container">
                 <h2>Galleria Superpole</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/sn1/465557874_18057449446847685_6301218534942180831_n.jpg" alt="Superpole Event">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/sn1/471593560_10165113463504196_6423627806745907011_n.jpg" alt="Gara Superpole">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/sn1/48368706_10158092164224196_6115367301551226880_n.jpg" alt="Podio Superpole">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="program-details">
-            <div class="container">
-                <div class="program-content">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h3>Criteri di Selezione</h3>
-                                <ul>
-                                    <li>Top 10 di ogni categoria</li>
-                                    <li>Wild card per prestazioni eccezionali</li>
-                                    <li>Campioni delle edizioni precedenti</li>
-                                </ul>
-                            </div>
+                <div class="talent-gallery">
+                    <a href="images/sn1/465557874_18057449446847685_6301218534942180831_n.jpg" data-lightbox="gallery" data-title="Qualifiche Superpole" class="gallery-item">
+                        <img src="images/sn1/465557874_18057449446847685_6301218534942180831_n.jpg" alt="Qualifiche Superpole">
+                        <div class="overlay">
+                            <h3>Qualifiche Superpole</h3>
                         </div>
-                    </div>
-                    <div class="program-image">
-                        <img src="images/sn1/471593560_10165113463504196_6423627806745907011_n.jpg" alt="Superpole in azione">
-                    </div>
+                    </a>
+                    
+                    <a href="images/sn1/471593560_10165113463504196_6423627806745907011_n.jpg" data-lightbox="gallery" data-title="Gara Superpole" class="gallery-item">
+                        <img src="images/sn1/471593560_10165113463504196_6423627806745907011_n.jpg" alt="Gara Superpole">
+                        <div class="overlay">
+                            <h3>Gara Superpole</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="images/sn1/48368706_10158092164224196_6115367301551226880_n.jpg" data-lightbox="gallery" data-title="Podio Superpole" class="gallery-item">
+                        <img src="images/sn1/48368706_10158092164224196_6115367301551226880_n.jpg" alt="Podio Superpole">
+                        <div class="overlay">
+                            <h3>Podio Superpole</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -112,7 +129,6 @@
                 <p>Dimostra di essere il pilota più veloce della Selezione Nazionale</p>
                 <div class="cta-buttons">
                     <a href="contatti.html" class="btn btn-primary">Iscriviti</a>
-                    <a href="#" class="btn btn-secondary">Regolamento Completo</a>
                 </div>
             </div>
         </section>
@@ -121,5 +137,6 @@
     <footer></footer>
     
     <script src="js/main.js"></script>
+    <script src="js/lightbox.min.js"></script>
 </body>
 </html> 

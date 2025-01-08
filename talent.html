@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="css/categoria.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/galleria.css">
 </head>
 <body>
     <header></header>
 
     <main class="categoria-page">
-        <!-- Hero Section -->
         <section class="hero-categoria talent">
             <div class="container">
                 <h1>Talent Program</h1>
@@ -22,105 +23,296 @@
             </div>
         </section>
 
-        <!-- Overview Section -->
-        <section class="overview">
+        <section class="overview-categories">
             <div class="container">
                 <div class="overview-content">
                     <div class="overview-text">
-                        <h2>Cos'è il Talent Program?</h2>
-                        <p>Il Talent Program è il punto di ingresso ideale per i giovani piloti che vogliono iniziare la loro carriera nel motorsport. Dedicato ai ragazzi dai 6 ai 13 anni, offre un percorso formativo completo che combina teoria e pratica.</p>
+                        <h2>Il Percorso Formativo</h2>
+                        <p>Il Talent Program è strutturato in quattro fasi progressive, pensate per garantire una formazione completa e sicura per i giovani piloti dai 6 ai 13 anni.</p>
                     </div>
-                    <div class="overview-image">
-                        <img src="images/talent/talent.jpg" alt="Talent Program in azione">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section con immagini -->
-        <section class="features">
-            <div class="container">
-                <h2>Caratteristiche del Programma</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <img src="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" alt="Formazione">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>Formazione Completa</h3>
-                        <p>Lezioni teoriche e pratiche con istruttori qualificati</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" alt="Formazione">
-                        <i class="fas fa-car"></i>
-                        <h3>Kart Fornito</h3>
-                        <p>Utilizzo di kart della scuola, completamente attrezzati</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" alt="Formazione">
-                        <i class="fas fa-trophy"></i>
-                        <h3>Mini Campionato</h3>
-                        <p>4 gare per mettere in pratica l'apprendimento</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" alt="Formazione">
-                        <i class="fas fa-users"></i>
-                        <h3>Gruppi Ridotti</h3>
-                        <p>Massima attenzione per ogni pilota</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Section -->
-        <section class="gallery">
-            <div class="container">
-                <h2>Galleria Talent</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/talent/talent.jpg" alt="Talent Program">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" alt="Talent in azione">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/sn2/465996528_18057682792847685_7462064702931881816_n.jpg" alt="Giovani piloti">
+                    <div class="categories-index">
+                        <a href="#fase-teoria" class="index-card">
+                            <div class="index-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="index-content">
+                                <h3>Fase 1: Teoria</h3>
+                                <p>Fondamenti e sicurezza</p>
+                            </div>
+                        </a>
+                        <a href="#fase-simulatore" class="index-card">
+                            <div class="index-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="index-content">
+                                <h3>Fase 2: Simulatore</h3>
+                                <p>Primi approcci alla guida</p>
+                            </div>
+                        </a>
+                        <a href="#fase-pratica" class="index-card">
+                            <div class="index-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="index-content">
+                                <h3>Fase 3: Pratica</h3>
+                                <p>Allenamento in pista</p>
+                            </div>
+                        </a>
+                        <a href="#fase-gara" class="index-card">
+                            <div class="index-icon">
+                                <i class="fas fa-flag-checkered"></i>
+                            </div>
+                            <div class="index-content">
+                                <h3>Fase 4: Gare</h3>
+                                <p>Mini campionato formativo</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Program Details con immagine laterale -->
-        <section class="program-details">
+                <!-- Gallery Section -->
+                <section class="gallery">
+                    <div class="container">
+                        <h2>Galleria Talent</h2>
+                        <div class="talent-gallery">
+                            <a href="images/sn2/465996528_18057682792847685_7462064702931881816_n.jpg" data-lightbox="gallery" data-title="Lezione in Pista" class="gallery-item">
+                                <img src="images/sn2/465996528_18057682792847685_7462064702931881816_n.jpg" alt="Lezione in Pista">
+                                <div class="overlay">
+                                    <h3>Lezione in Pista</h3>
+                                </div>
+                            </a>
+                            
+                            <a href="images/talent/talent.jpg" data-lightbox="gallery" data-title="Teoria e Simulatore" class="gallery-item">
+                                <img src="images/talent/talent.jpg" alt="Teoria e Simulatore">
+                                <div class="overlay">
+                                    <h3>Teoria e Simulatore</h3>
+                                </div>
+                            </a>
+                            
+                            <a href="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" data-lightbox="gallery" data-title="Training Day" class="gallery-item">
+                                <img src="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" alt="Training Day">
+                                <div class="overlay">
+                                    <h3>Training Day</h3>
+                                </div>
+                            </a>
+        
+                            <a href="images/sn1/465557874_18057449446847685_6301218534942180831_n.jpg" data-lightbox="gallery" data-title="Briefing Pre-Gara" class="gallery-item">
+                                <img src="images/sn1/465557874_18057449446847685_6301218534942180831_n.jpg" alt="Briefing Pre-Gara">
+                                <div class="overlay">
+                                    <h3>Briefing Pre-Gara</h3>
+                                </div>
+                            </a>
+        
+                            <a href="images/sn1/471593560_10165113463504196_6423627806745907011_n.jpg" data-lightbox="gallery" data-title="Mini Gara" class="gallery-item">
+                                <img src="images/sn1/471593560_10165113463504196_6423627806745907011_n.jpg" alt="Mini Gara">
+                                <div class="overlay">
+                                    <h3>Mini Gara</h3>
+                                </div>
+                            </a>
+        
+                            <a href="images/sn1/48368706_10158092164224196_6115367301551226880_n.jpg" data-lightbox="gallery" data-title="Premiazione" class="gallery-item">
+                                <img src="images/sn1/48368706_10158092164224196_6115367301551226880_n.jpg" alt="Premiazione">
+                                <div class="overlay">
+                                    <h3>Premiazione</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- Dettagli Fasi -->
+        <section class="categories-details">
             <div class="container">
-                <div class="program-content">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h3>Fase 1: Introduzione</h3>
-                                <p>Fondamenti di guida e sicurezza in pista</p>
-                                <ul>
-                                    <li>Posizione di guida</li>
-                                    <li>Controlli base del kart</li>
-                                    <li>Regole di sicurezza</li>
-                                </ul>
+                <!-- Fase 1: Teoria -->
+                <div id="fase-teoria" class="category-detail">
+                    <div class="category-header">
+                        <h2>Fase 1: Teoria e Fondamenti</h2>
+                    </div>
+                    <div class="category-content">
+                        <div class="category-text">
+                            <p>La prima fase è dedicata all'apprendimento delle basi teoriche e delle norme di sicurezza:</p>
+                            <ul>
+                                <li>Introduzione al karting e alla sicurezza</li>
+                                <li>Regolamento sportivo di base</li>
+                                <li>Tecniche di guida fondamentali</li>
+                                <li>Comportamento in pista</li>
+                            </ul>
+                            
+                            <div class="event-structure">
+                                <h4>Struttura Lezioni</h4>
+                                <div class="event-details">
+                                    <div class="event-timing">
+                                        <h5>Programma</h5>
+                                        <ul>
+                                            <li>4 lezioni teoriche</li>
+                                            <li>2 ore per lezione</li>
+                                            <li>Gruppi di max 8 allievi</li>
+                                            <li>Test di valutazione</li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-points">
+                                        <h5>Argomenti Chiave</h5>
+                                        <ul>
+                                            <li>Sicurezza in pista</li>
+                                            <li>Bandiere e segnali</li>
+                                            <li>Linee ideali</li>
+                                            <li>Posizione di guida</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Altre fasi del programma... -->
+                        <div class="category-image">
+                            <img src="images/talent/talent.jpg" alt="Lezione Teorica">
+                        </div>
                     </div>
-                    <div class="program-image">
-                        <img src="images/sn2/465996528_18057682792847685_7462064702931881816_n.jpg" alt="Allenamento in pista">
+                </div>
+
+                <!-- Fase 2: Simulatore -->
+                <div id="fase-simulatore" class="category-detail">
+                    <div class="category-header">
+                        <h2>Fase 2: Allenamento al Simulatore</h2>
+                    </div>
+                    <div class="category-content">
+                        <div class="category-text">
+                            <p>La seconda fase utilizza simulatori professionali per iniziare a mettere in pratica le nozioni teoriche:</p>
+                            <ul>
+                                <li>Simulatori professionali con force feedback</li>
+                                <li>Riproduzione fedele dei circuiti</li>
+                                <li>Analisi telemetrica</li>
+                                <li>Coaching personalizzato</li>
+                            </ul>
+
+                            <div class="event-structure">
+                                <h4>Struttura Allenamenti</h4>
+                                <div class="event-details">
+                                    <div class="event-timing">
+                                        <h5>Sessioni</h5>
+                                        <ul>
+                                            <li>6 sessioni pratiche</li>
+                                            <li>90 minuti per sessione</li>
+                                            <li>Briefing pre-sessione</li>
+                                            <li>Analisi dati post-sessione</li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-points">
+                                        <h5>Obiettivi</h5>
+                                        <ul>
+                                            <li>Traiettorie base</li>
+                                            <li>Punti di frenata</li>
+                                            <li>Gestione acceleratore</li>
+                                            <li>Consistenza nei tempi</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="images/talent/talent2.jpg" alt="Simulatore">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 3: Pratica -->
+                <div id="fase-pratica" class="category-detail">
+                    <div class="category-header">
+                        <h2>Fase 3: Pratica in Pista</h2>
+                    </div>
+                    <div class="category-content">
+                        <div class="category-text">
+                            <p>La terza fase porta gli allievi in pista per le prime esperienze reali di guida:</p>
+                            <ul>
+                                <li>Kart scuola completamente attrezzati</li>
+                                <li>Istruttori qualificati</li>
+                                <li>Progressione graduale</li>
+                                <li>Focus sulla sicurezza</li>
+                            </ul>
+
+                            <div class="event-structure">
+                                <h4>Struttura Allenamenti</h4>
+                                <div class="event-details">
+                                    <div class="event-timing">
+                                        <h5>Sessioni</h5>
+                                        <ul>
+                                            <li>8 giornate in pista</li>
+                                            <li>Multiple sessioni brevi</li>
+                                            <li>Briefing tecnici</li>
+                                            <li>Analisi video</li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-points">
+                                        <h5>Progressione</h5>
+                                        <ul>
+                                            <li>Controllo base</li>
+                                            <li>Tecniche avanzate</li>
+                                            <li>Gestione gara</li>
+                                            <li>Preparazione fisica</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="images/sn2/465996528_18057682792847685_7462064702931881816_n.jpg" alt="Pratica in Pista">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 4: Gare -->
+                <div id="fase-gara" class="category-detail">
+                    <div class="category-header">
+                        <h2>Fase 4: Mini Campionato</h2>
+                    </div>
+                    <div class="category-content">
+                        <div class="category-text">
+                            <p>La fase finale prevede un mini campionato per mettere in pratica tutto l'apprendimento:</p>
+                            <ul>
+                                <li>4 gare formative</li>
+                                <li>Format gara completo</li>
+                                <li>Classifiche e premiazioni</li>
+                                <li>Valutazione finale</li>
+                            </ul>
+
+                            <div class="event-structure">
+                                <h4>Struttura Eventi</h4>
+                                <div class="event-details">
+                                    <div class="event-timing">
+                                        <h5>Format Gara</h5>
+                                        <ul>
+                                            <li>Prove libere (15 min)</li>
+                                            <li>Qualifiche (10 min)</li>
+                                            <li>Gara (12 giri)</li>
+                                            <li>Premiazione</li>
+                                        </ul>
+                                    </div>
+                                    <div class="event-points">
+                                        <h5>Valutazione</h5>
+                                        <ul>
+                                            <li>Comportamento in pista</li>
+                                            <li>Gestione gara</li>
+                                            <li>Progressione</li>
+                                            <li>Attitudine generale</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="images/sn2/275944748_10161973642129196_6818157725882433714_n.jpg" alt="Mini Campionato">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
-                <h2>Inizia il Tuo Percorso</h2>
-                <p>Entra a far parte del Talent Program e inizia la tua carriera nel motorsport</p>
+                <h2>Inizia il Tuo Percorso nel Motorsport</h2>
+                <p>Un programma completo per formare i campioni di domani</p>
                 <div class="cta-buttons">
                     <a href="contatti.html" class="btn btn-primary">Iscriviti Ora</a>
-                    <a href="#" class="btn btn-secondary">Scarica il Regolamento</a>
                 </div>
             </div>
         </section>
