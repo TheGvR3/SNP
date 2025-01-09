@@ -42,8 +42,9 @@
 .special-events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-bottom: 50px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
 }
 
 /* Campionati Grid */
@@ -166,6 +167,10 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .categoria-card:hover {
@@ -173,13 +178,23 @@
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-.categoria-card img {
+.categoria-card .img-container {
     width: 100%;
     height: 200px;
+    overflow: hidden;
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .categoria-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
     padding: 25px;
 }
 
@@ -200,10 +215,7 @@
 @media (max-width: 992px) {
     .special-events {
         grid-template-columns: 1fr;
-    }
-
-    .group-cards {
-        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
     }
 }
 
@@ -518,4 +530,258 @@
 .campionati-group .btn {
     margin-top: 30px;
     align-self: center;
+}
+
+.categoria-section {
+    margin-bottom: 80px;
+    padding: 60px 30px 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    position: relative;
+}
+
+/* Bordi colorati per le sezioni */
+.categoria-section:nth-child(1) { /* Sprint section */
+    border: 2px solid var(--primary-color); /* Giallo */
+}
+
+.categoria-section:nth-child(2) { /* Endurance section */
+    border: 2px solid var(--secondary-color); /* Nero */
+}
+
+.categoria-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 30px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    border-radius: 25px;
+    white-space: nowrap;
+}
+
+/* Colori specifici per gli header */
+.categoria-section:nth-child(1) h3 { /* Sprint header */
+    background: var(--primary-color); /* Giallo */
+    box-shadow: 0 4px 15px rgba(233, 188, 0, 0.2);
+}
+
+.categoria-section:nth-child(2) h3 { /* Endurance header */
+    background: var(--secondary-color); /* Nero */
+    box-shadow: 0 4px 15px rgba(51, 49, 54, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .categoria-section {
+        padding: 50px 20px 20px;
+        margin: 40px 15px;
+    }
+
+    .categoria-section h3 {
+        font-size: 1.3rem;
+        padding: 8px 20px;
+        top: -16px;
+        margin-bottom: 20px;
+    }
+}
+
+.categoria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categoria-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.categoria-content {
+    padding: 25px;
+}
+
+.categoria-content h4 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+}
+
+.categoria-content p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.categoria-features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.categoria-features li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.categoria-features i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+    .categoria-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 576px) {
+    .categoria-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .categoria-content {
+        padding: 20px;
+    }
+
+    .categoria-content h4 {
+        font-size: 1.5rem;
+    }
+}
+
+/* CTA centrale per le sezioni */
+.categoria-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.categoria-cta .btn {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+}
+
+/* Responsive per Special Events */
+@media (max-width: 992px) {
+    .special-events {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .special-events {
+        margin-bottom: 60px;
+    }
+
+    .categoria-cta .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Stili specifici per le card dentro le sezioni Sprint/Endurance */
+.categoria-section .categoria-card {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.categoria-section .categoria-card img {
+    height: 200px;
+}
+
+.categoria-section .categoria-content {
+    padding: 25px;
+}
+
+.categoria-section .categoria-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.categoria-section .categoria-content p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.categoria-section .categoria-features {
+    margin-bottom: 20px;
+}
+
+.categoria-section .categoria-features li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+/* Manteniamo le card degli eventi speciali (Talent e Superpole) più grandi */
+.special-events .categoria-card {
+    max-width: none;
+}
+
+.special-events .categoria-card img {
+    height: 250px;
+}
+
+/* Aggiustiamo il grid gap */
+.categoria-grid {
+    gap: 30px;
+}
+
+/* Dimensioni fisse per il contenitore dell'immagine */
+.categoria-card .img-container {
+    width: 100%;
+    height: 200px; /* Altezza fissa per tutte le immagini */
+    overflow: hidden;
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenuto della card con altezza fissa */
+.categoria-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Altezza fissa per il contenuto */
+    padding: 25px;
+}
+
+/* Aggiustamenti per gli eventi speciali */
+.special-events .categoria-card .img-container {
+    height: 250px; /* Immagini più grandi per gli eventi speciali */
+}
+
+.special-events .categoria-content {
+    height: 320px; /* Contenuto leggermente più alto per gli eventi speciali */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .categoria-content {
+        height: 280px; /* Leggermente più compatto su mobile */
+    }
+
+    .special-events .categoria-content {
+        height: 300px;
+    }
 } 
